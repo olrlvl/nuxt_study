@@ -10,6 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.20.0",
+    "@typescript-eslint/parser": "^6.20.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.21.0",
     "nuxt": "^3.9.3",
     "vue": "^3.4.14",
     "vue-router": "^4.2.5"
