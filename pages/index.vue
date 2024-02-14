@@ -1,18 +1,14 @@
 <script setup lang="ts">
 const todoList = ref<string[]>([]);
 const text = ref<string>("");
-
-function addTodo() {
-    todoList.value.push(text.value);
-    text.value = "";
-}
-
-function removeTodo(index: number) {
-    todoList.value.splice(index, 1);
-}
 </script>
 <template>
-    <main class="bg-black w-full h-screen overflow-auto flex jus">
-        <div class="w-96 h-96 bg-white self-center"></div>
+    <main class="bg-green-600/50 w-full h-screen overflow-auto">
+        <section class="w-full h-full flex justify-center p-24">
+            <div class="bg-white w-[600px] h-[400px] shadow-modal-default flex flex-col p-6">
+                <p class="text-mainTitle font-bold">Make TodoList</p>
+                <hr class="mt-2" />
+            </div>
+        </section>
     </main>
 </template>
