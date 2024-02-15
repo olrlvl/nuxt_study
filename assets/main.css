@@ -1,3 +1,62 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    body {
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+            "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    }
+}
+
+@layer components {
+    /* 기본 인풋 텍스트 라벨 */
+    .input-text-label {
+        @apply font-medium text-gray-500 text-paraText;
+    }
+    /* 모바일 기본 인풋 폼 */
+    .mobile-input-default {
+        @apply w-full h-12 px-4 border border-gray-100 text-paraText text-gray-700 outline-none;
+    }
+    /* 기본 인풋 폼 */
+    .input-default {
+        @apply w-full h-12 px-4 border border-gray-100 text-paraText text-gray-700 outline-none;
+    }
+    /* 70px 아이콘 */
+    .icon-xxl {
+        @apply w-[70px] h-[70px];
+    }
+    /* 48px 아이콘 */
+    .icon-xl {
+        @apply w-12 h-12;
+    }
+    /* 36px 아이콘 */
+    .icon-llg {
+        @apply w-9 h-9;
+    }
+    /* 32px 아이콘 */
+    .icon-lg {
+        @apply w-8 h-8;
+    }
+    /* 24px 아이콘 */
+    .icon-md {
+        @apply w-6 h-6;
+    }
+    /* 20px 아이콘 */
+    .icon-ms {
+        @apply w-5 h-5;
+    }
+    /* 18px 아이콘 */
+    .icon-xs {
+        @apply w-4.5 h-4.5;
+    }
+    .fade-in {
+        @apply transition-opacity duration-500 opacity-100;
+    }
+
+    .fade-out {
+        @apply transition-opacity duration-500 opacity-0;
+    }
+}

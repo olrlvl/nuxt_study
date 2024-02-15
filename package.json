@@ -23,6 +23,7 @@
         "vue-router": "^4.2.5"
     },
     "dependencies": {
-        "babel-eslint": "^10.1.0"
+        "babel-eslint": "^10.1.0",
+        "preline": "^2.0.3"
     }
 }
